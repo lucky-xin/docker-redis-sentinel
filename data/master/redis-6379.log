@@ -1,0 +1,307 @@
+1:C 18 Dec 2019 07:56:28.781 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 07:56:28.783 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 07:56:28.786 # Configuration loaded
+1:M 18 Dec 2019 07:56:28.791 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 07:56:28.798 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 07:56:28.800 # Server initialized
+1:M 18 Dec 2019 07:56:28.805 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 07:56:28.815 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 07:56:28.822 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 07:56:28.830 * DB loaded from append only file: 0.019 seconds
+1:M 18 Dec 2019 07:56:28.834 * Ready to accept connections
+1:M 18 Dec 2019 07:56:28.882 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 07:56:28.884 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 07:56:28.888 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 07:56:28.897 * Background saving started by pid 9
+9:C 18 Dec 2019 07:56:28.902 * DB saved on disk
+9:C 18 Dec 2019 07:56:28.906 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 07:56:28.941 * Background saving terminated with success
+1:M 18 Dec 2019 07:56:28.949 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:M 18 Dec 2019 07:56:29.783 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 07:56:29.785 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 07:56:29.786 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 07:56:29.790 * Background saving started by pid 10
+10:C 18 Dec 2019 07:56:29.794 * DB saved on disk
+10:C 18 Dec 2019 07:56:29.796 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 07:56:29.850 * Background saving terminated with success
+1:M 18 Dec 2019 07:56:29.855 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 07:57:40.022 # Connection with replica 172.20.0.1:6381 lost.
+1:M 18 Dec 2019 07:57:40.609 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 07:57:40.611 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 07:57:40.612 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 07:57:40.614 * Background saving started by pid 11
+11:C 18 Dec 2019 07:57:40.620 * DB saved on disk
+11:C 18 Dec 2019 07:57:40.622 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 07:57:40.691 * Background saving terminated with success
+1:M 18 Dec 2019 07:57:40.697 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 10:07:31.647 # Connection with replica 172.20.0.1:6380 lost.
+1:M 18 Dec 2019 10:07:31.655 # Connection with replica 172.20.0.1:6381 lost.
+1:C 18 Dec 2019 15:43:52.346 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:43:52.348 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:43:52.356 # Configuration loaded
+1:M 18 Dec 2019 15:43:52.367 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:43:52.372 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:43:52.375 # Server initialized
+1:M 18 Dec 2019 15:43:52.378 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:43:52.392 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:43:52.395 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:43:52.404 * DB loaded from append only file: 0.021 seconds
+1:M 18 Dec 2019 15:43:52.407 * Ready to accept connections
+1:signal-handler (1576684038) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 15:47:18.491 # User requested shutdown...
+1:M 18 Dec 2019 15:47:18.492 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 15:47:18.494 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:47:19.502 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:47:19.504 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:47:19.508 # Configuration loaded
+1:M 18 Dec 2019 15:47:19.514 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:47:19.520 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:47:19.521 # Server initialized
+1:M 18 Dec 2019 15:47:19.523 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:47:19.532 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:47:19.539 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:47:19.544 * DB loaded from append only file: 0.018 seconds
+1:M 18 Dec 2019 15:47:19.548 * Ready to accept connections
+1:signal-handler (1576684078) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 15:47:59.027 # User requested shutdown...
+1:M 18 Dec 2019 15:47:59.028 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 15:47:59.030 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:47:59.875 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:47:59.878 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:47:59.881 # Configuration loaded
+1:M 18 Dec 2019 15:47:59.895 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:47:59.899 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:47:59.902 # Server initialized
+1:M 18 Dec 2019 15:47:59.905 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:47:59.917 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:47:59.926 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:47:59.936 * DB loaded from append only file: 0.024 seconds
+1:M 18 Dec 2019 15:47:59.938 * Ready to accept connections
+1:M 18 Dec 2019 15:48:00.840 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 15:48:00.843 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 15:48:00.847 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:48:00.852 * Background saving started by pid 9
+9:C 18 Dec 2019 15:48:00.860 * DB saved on disk
+9:C 18 Dec 2019 15:48:00.881 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:48:00.909 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 15:48:00.912 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 15:48:00.915 * Waiting for end of BGSAVE for SYNC
+1:M 18 Dec 2019 15:48:00.956 * Background saving terminated with success
+1:M 18 Dec 2019 15:48:00.962 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 15:48:00.969 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:signal-handler (1576684331) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 15:52:11.163 # User requested shutdown...
+1:M 18 Dec 2019 15:52:11.166 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 15:52:11.168 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:52:12.073 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:52:12.076 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:52:12.082 # Configuration loaded
+1:M 18 Dec 2019 15:52:12.093 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:52:12.095 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:52:12.099 # Server initialized
+1:M 18 Dec 2019 15:52:12.101 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:52:12.115 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:52:12.118 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:52:12.132 * DB loaded from append only file: 0.022 seconds
+1:M 18 Dec 2019 15:52:12.136 * Ready to accept connections
+1:M 18 Dec 2019 15:52:12.170 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 15:52:12.172 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 15:52:12.173 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:52:12.176 * Background saving started by pid 9
+9:C 18 Dec 2019 15:52:12.184 * DB saved on disk
+9:C 18 Dec 2019 15:52:12.188 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:52:12.241 * Background saving terminated with success
+1:M 18 Dec 2019 15:52:12.252 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:M 18 Dec 2019 15:52:12.988 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 15:52:12.989 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 15:52:12.991 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:52:12.993 * Background saving started by pid 10
+10:C 18 Dec 2019 15:52:12.997 * DB saved on disk
+10:C 18 Dec 2019 15:52:12.999 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:52:13.049 * Background saving terminated with success
+1:M 18 Dec 2019 15:52:13.054 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:signal-handler (1576684521) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 15:55:21.671 # User requested shutdown...
+1:M 18 Dec 2019 15:55:21.673 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 15:55:21.674 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:55:22.417 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:55:22.419 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:55:22.421 # Configuration loaded
+1:M 18 Dec 2019 15:55:22.427 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:55:22.429 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:55:22.431 # Server initialized
+1:M 18 Dec 2019 15:55:22.435 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:55:22.439 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:55:22.441 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:55:22.443 * DB loaded from append only file: 0.007 seconds
+1:M 18 Dec 2019 15:55:22.445 * Ready to accept connections
+1:M 18 Dec 2019 15:55:22.668 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 15:55:22.671 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 15:55:22.673 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:55:22.676 * Background saving started by pid 10
+10:C 18 Dec 2019 15:55:22.682 * DB saved on disk
+10:C 18 Dec 2019 15:55:22.685 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:55:22.711 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 15:55:22.714 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 15:55:22.716 * Waiting for end of BGSAVE for SYNC
+1:M 18 Dec 2019 15:55:22.748 * Background saving terminated with success
+1:M 18 Dec 2019 15:55:22.764 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 15:55:22.770 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:signal-handler (1576684625) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 15:57:05.872 # Connection with replica 172.20.0.1:6380 lost.
+1:M 18 Dec 2019 15:57:05.901 # User requested shutdown...
+1:M 18 Dec 2019 15:57:05.902 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 15:57:05.904 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:57:06.694 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:57:06.696 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:57:06.700 # Configuration loaded
+1:M 18 Dec 2019 15:57:06.707 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 15:57:06.709 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 15:57:06.715 # Server initialized
+1:M 18 Dec 2019 15:57:06.719 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 15:57:06.730 * Reading RDB preamble from AOF file...
+1:M 18 Dec 2019 15:57:06.736 * Reading the remaining AOF tail...
+1:M 18 Dec 2019 15:57:06.739 * DB loaded from append only file: 0.017 seconds
+1:M 18 Dec 2019 15:57:06.742 * Ready to accept connections
+1:M 18 Dec 2019 15:57:06.765 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 15:57:06.767 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 15:57:06.770 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:57:06.773 * Background saving started by pid 9
+9:C 18 Dec 2019 15:57:06.782 * DB saved on disk
+9:C 18 Dec 2019 15:57:06.785 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:57:06.845 * Background saving terminated with success
+1:M 18 Dec 2019 15:57:06.849 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 15:57:06.851 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 15:57:06.853 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 15:57:06.855 * Background saving started by pid 10
+10:C 18 Dec 2019 15:57:06.860 * DB saved on disk
+1:M 18 Dec 2019 15:57:06.861 * Synchronization with replica 172.20.0.1:6380 succeeded
+10:C 18 Dec 2019 15:57:06.864 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 15:57:06.950 * Background saving terminated with success
+1:M 18 Dec 2019 15:57:06.955 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 16:01:38.304 # Connection with replica 172.20.0.1:6381 lost.
+1:M 18 Dec 2019 16:01:38.307 # Connection with replica 172.20.0.1:6380 lost.
+1:signal-handler (1576684898) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 16:01:38.621 # User requested shutdown...
+1:M 18 Dec 2019 16:01:38.623 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 16:01:38.625 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:18:37.320 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:18:37.323 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:18:37.328 # Configuration loaded
+1:M 19 Dec 2019 00:18:37.336 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 00:18:37.344 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 00:18:37.350 # Server initialized
+1:M 19 Dec 2019 00:18:37.357 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 00:18:37.374 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 00:18:37.379 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 00:18:37.389 * DB loaded from append only file: 0.025 seconds
+1:M 19 Dec 2019 00:18:37.391 * Ready to accept connections
+1:signal-handler (1576714798) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 00:19:58.258 # User requested shutdown...
+1:M 19 Dec 2019 00:19:58.261 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 00:19:58.263 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:19:59.027 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:19:59.030 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:19:59.033 # Configuration loaded
+1:M 19 Dec 2019 00:19:59.042 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 00:19:59.047 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 00:19:59.049 # Server initialized
+1:M 19 Dec 2019 00:19:59.052 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 00:19:59.063 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 00:19:59.068 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 00:19:59.079 * DB loaded from append only file: 0.016 seconds
+1:M 19 Dec 2019 00:19:59.092 * Ready to accept connections
+1:signal-handler (1576716754) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 00:52:34.822 # User requested shutdown...
+1:M 19 Dec 2019 00:52:34.826 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 00:52:34.828 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:52:36.675 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:52:36.681 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:52:36.685 # Configuration loaded
+1:M 19 Dec 2019 00:52:36.690 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 00:52:36.692 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 00:52:36.694 # Server initialized
+1:M 19 Dec 2019 00:52:36.698 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 00:52:36.709 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 00:52:36.718 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 00:52:36.726 * DB loaded from append only file: 0.026 seconds
+1:M 19 Dec 2019 00:52:36.730 * Ready to accept connections
+1:signal-handler (1576717703) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 01:08:24.024 # User requested shutdown...
+1:M 19 Dec 2019 01:08:24.026 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 01:08:24.028 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 01:08:24.572 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 01:08:24.575 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 01:08:24.577 # Configuration loaded
+1:M 19 Dec 2019 01:08:24.581 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 01:08:24.584 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 01:08:24.586 # Server initialized
+1:M 19 Dec 2019 01:08:24.588 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 01:08:24.591 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 01:08:24.593 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 01:08:24.595 * DB loaded from append only file: 0.005 seconds
+1:M 19 Dec 2019 01:08:24.597 * Ready to accept connections
+1:signal-handler (1576718679) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 01:24:39.449 # User requested shutdown...
+1:M 19 Dec 2019 01:24:39.450 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 01:24:39.452 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 01:24:40.011 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 01:24:40.012 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 01:24:40.014 # Configuration loaded
+1:M 19 Dec 2019 01:24:40.017 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 01:24:40.021 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 01:24:40.025 # Server initialized
+1:M 19 Dec 2019 01:24:40.026 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 01:24:40.032 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 01:24:40.034 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 01:24:40.037 * DB loaded from append only file: 0.008 seconds
+1:M 19 Dec 2019 01:24:40.038 * Ready to accept connections
+1:M 19 Dec 2019 01:24:41.356 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 19 Dec 2019 01:24:41.358 * Full resync requested by replica 172.20.0.1:6380
+1:M 19 Dec 2019 01:24:41.360 * Starting BGSAVE for SYNC with target: disk
+1:M 19 Dec 2019 01:24:41.369 * Background saving started by pid 9
+9:C 19 Dec 2019 01:24:41.374 * DB saved on disk
+9:C 19 Dec 2019 01:24:41.378 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Dec 2019 01:24:41.448 * Background saving terminated with success
+1:M 19 Dec 2019 01:24:41.463 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:M 19 Dec 2019 01:24:41.504 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 19 Dec 2019 01:24:41.508 * Full resync requested by replica 172.20.0.1:6381
+1:M 19 Dec 2019 01:24:41.510 * Starting BGSAVE for SYNC with target: disk
+1:M 19 Dec 2019 01:24:41.512 * Background saving started by pid 10
+10:C 19 Dec 2019 01:24:41.519 * DB saved on disk
+10:C 19 Dec 2019 01:24:41.522 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Dec 2019 01:24:41.558 * Background saving terminated with success
+1:M 19 Dec 2019 01:24:41.564 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:signal-handler (1576722839) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 02:33:59.703 # User requested shutdown...
+1:M 19 Dec 2019 02:33:59.706 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 02:33:59.708 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 05:06:15.308 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 05:06:15.309 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 05:06:15.313 # Configuration loaded
+1:M 19 Dec 2019 05:06:15.320 * Running mode=standalone, port=6379.
+1:M 19 Dec 2019 05:06:15.322 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 19 Dec 2019 05:06:15.324 # Server initialized
+1:M 19 Dec 2019 05:06:15.326 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Dec 2019 05:06:15.335 * Reading RDB preamble from AOF file...
+1:M 19 Dec 2019 05:06:15.339 * Reading the remaining AOF tail...
+1:M 19 Dec 2019 05:06:15.344 * DB loaded from append only file: 0.014 seconds
+1:M 19 Dec 2019 05:06:15.353 * Ready to accept connections
+1:M 19 Dec 2019 05:06:16.187 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 19 Dec 2019 05:06:16.190 * Full resync requested by replica 172.20.0.1:6380
+1:M 19 Dec 2019 05:06:16.192 * Starting BGSAVE for SYNC with target: disk
+1:M 19 Dec 2019 05:06:16.196 * Background saving started by pid 10
+10:C 19 Dec 2019 05:06:16.209 * DB saved on disk
+10:C 19 Dec 2019 05:06:16.214 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Dec 2019 05:06:16.228 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 19 Dec 2019 05:06:16.231 * Full resync requested by replica 172.20.0.1:6381
+1:M 19 Dec 2019 05:06:16.233 * Waiting for end of BGSAVE for SYNC
+1:M 19 Dec 2019 05:06:16.259 * Background saving terminated with success
+1:M 19 Dec 2019 05:06:16.264 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:M 19 Dec 2019 05:06:16.267 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 19 Dec 2019 09:39:30.260 # Connection with replica 172.20.0.1:6380 lost.
+1:M 19 Dec 2019 09:39:30.289 # Connection with replica 172.20.0.1:6381 lost.
+1:signal-handler (1576748370) Received SIGTERM scheduling shutdown...
+1:M 19 Dec 2019 09:39:30.861 # User requested shutdown...
+1:M 19 Dec 2019 09:39:30.863 * Calling fsync() on the AOF file.
+1:M 19 Dec 2019 09:39:30.865 # Redis is now ready to exit, bye bye...

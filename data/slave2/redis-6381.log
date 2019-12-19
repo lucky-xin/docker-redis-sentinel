@@ -1,0 +1,1012 @@
+1:C 18 Dec 2019 07:57:40.570 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 07:57:40.573 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 07:57:40.575 # Configuration loaded
+1:S 18 Dec 2019 07:57:40.581 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 07:57:40.585 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 07:57:40.587 # Server initialized
+1:S 18 Dec 2019 07:57:40.588 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 07:57:40.591 * Ready to accept connections
+1:S 18 Dec 2019 07:57:40.593 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 07:57:40.595 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 07:57:40.596 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 07:57:40.599 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 07:57:40.605 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 07:57:40.618 * Full resync from master: 49e34f9dd0ce699a5fd0a65d6ea4e2778c43edb7:14605
+1:S 18 Dec 2019 07:57:40.697 * MASTER <-> REPLICA sync: receiving 176 bytes from master
+1:S 18 Dec 2019 07:57:40.701 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 07:57:40.703 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 07:57:40.707 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 07:57:40.710 * Background append only file rewriting started by pid 9
+1:S 18 Dec 2019 07:57:40.739 * AOF rewrite child asks to stop sending diffs.
+9:C 18 Dec 2019 07:57:40.742 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 18 Dec 2019 07:57:40.743 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 18 Dec 2019 07:57:40.746 * SYNC append only file rewrite performed
+9:C 18 Dec 2019 07:57:40.748 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 07:57:40.801 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 07:57:40.805 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 07:57:40.808 * Background AOF rewrite finished successfully
+1:S 18 Dec 2019 10:07:31.645 # Connection with master lost.
+1:S 18 Dec 2019 10:07:31.652 * Caching the disconnected master state.
+1:C 18 Dec 2019 15:43:52.348 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:43:52.351 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:43:52.361 # Configuration loaded
+1:S 18 Dec 2019 15:43:52.372 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:43:52.376 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:43:52.379 # Server initialized
+1:S 18 Dec 2019 15:43:52.387 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:43:52.395 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:43:52.403 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:43:52.410 * DB loaded from append only file: 0.018 seconds
+1:S 18 Dec 2019 15:43:52.415 * Ready to accept connections
+1:S 18 Dec 2019 15:43:52.418 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:43:52.428 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:43:52.451 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:43:53.456 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:43:53.460 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:43:53.464 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:43:54.467 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:43:54.469 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:43:54.473 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:43:55.476 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:43:55.478 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:31.010 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:31.658 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:31.660 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:31.665 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:32.666 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:32.668 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:32.672 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:33.675 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:33.678 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:44.854 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:45.740 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:45.742 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:45.746 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:46.748 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:46.751 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:46.757 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:47.758 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:47.761 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:54.872 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:55.803 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:55.805 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:44:58.869 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:44:59.826 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:44:59.828 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:01.867 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:02.844 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:02.847 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:02.851 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:03.854 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:03.856 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:03.860 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:04.864 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:04.866 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:04.871 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:05.874 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:05.877 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:05.881 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:06.886 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:06.889 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:06.894 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:07.895 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:07.897 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:07.901 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:08.906 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:08.908 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:08.915 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:09.915 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:09.917 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:09.921 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:10.924 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:10.926 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:10.932 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:11.933 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:11.936 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:11.941 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:12.943 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:12.946 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:12.951 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:13.954 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:13.957 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:13.963 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:14.964 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:14.967 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:14.972 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:15.975 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:15.977 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:15.981 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:16.985 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:16.988 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:16.992 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:17.995 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:17.997 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:18.002 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:19.006 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:19.008 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:19.014 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:20.017 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:20.019 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:20.023 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:21.026 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:21.029 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:21.035 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:22.036 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:22.039 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:22.043 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:23.047 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:23.050 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:23.054 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:24.059 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:24.068 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:24.077 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:25.080 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:25.083 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:25.088 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:26.091 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:26.093 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:26.098 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:27.101 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:27.104 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:27.108 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:28.113 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:28.115 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:28.121 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:29.124 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:29.127 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:29.130 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:30.137 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:30.140 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:30.143 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:31.149 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:31.152 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:31.156 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:32.160 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:32.163 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:32.167 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:33.170 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:33.173 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:33.178 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:34.180 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:34.183 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:34.187 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:35.190 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:35.193 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:35.197 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:36.202 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:36.205 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:36.208 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:37.213 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:37.216 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:37.220 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:38.223 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:38.233 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:38.236 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:39.241 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:39.244 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:39.248 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:40.251 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:40.254 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:40.258 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:41.261 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:41.263 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:41.267 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:42.270 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:42.272 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:42.277 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:43.279 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:43.283 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:43.286 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:44.290 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:44.293 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:44.298 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:45.300 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:45.302 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:45.307 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:46.309 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:46.311 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:46.315 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:47.319 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:47.321 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:47.327 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:48.327 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:48.329 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:48.337 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:49.338 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:49.341 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:49.345 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:50.348 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:50.350 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:50.355 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:51.357 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:51.359 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:51.364 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:52.366 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:52.370 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:52.374 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:53.377 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:53.380 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:53.384 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:54.387 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:54.390 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:54.395 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:55.398 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:55.400 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:55.404 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:56.407 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:56.410 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:56.414 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:57.417 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:57.420 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:57.425 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:58.427 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:58.430 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:58.435 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:45:59.438 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:45:59.441 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:45:59.445 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:00.449 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:00.452 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:00.457 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:01.459 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:01.462 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:01.466 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:02.469 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:02.472 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:02.476 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:03.481 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:03.484 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:03.489 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:04.492 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:04.494 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:07.544 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:08.514 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:08.517 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:08.522 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:09.527 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:09.529 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:09.533 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:10.538 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:10.541 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:10.545 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:11.548 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:11.550 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:13.587 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:14.568 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:14.571 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:14.576 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:15.578 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:15.581 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:15.587 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:16.590 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:16.592 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:16.597 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:17.601 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:17.603 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:17.609 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:18.610 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:18.611 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:18.617 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:19.618 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:19.619 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:20.643 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:21.631 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:21.633 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:21.637 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:22.640 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:22.644 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:22.647 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:23.653 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:23.655 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:23.660 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:24.664 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:24.667 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:24.673 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:25.675 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:25.678 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:25.682 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:26.686 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:26.689 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:37.859 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:38.745 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:38.748 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:49.904 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:50.806 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:50.812 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:50.825 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:51.828 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:51.832 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:52.854 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:53.844 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:53.848 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:53.852 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:54.856 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:54.859 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:54.870 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:55.868 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:55.871 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:55.875 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:56.879 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:56.884 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:56.889 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:57.890 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:57.894 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:57.898 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:58.900 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:58.902 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:58.907 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:46:59.909 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:46:59.911 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:46:59.915 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:00.917 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:00.920 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:00.924 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:01.927 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:01.929 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:01.934 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:02.936 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:02.939 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:02.944 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:03.948 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:03.950 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:03.955 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:04.957 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:04.960 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:04.965 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:05.968 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:05.970 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:05.974 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:06.978 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:06.981 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:06.986 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:07.987 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:07.994 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:07.996 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:09.002 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:09.004 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:09.008 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:10.010 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:10.013 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:10.017 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:11.017 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:11.019 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:11.023 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:12.024 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:12.025 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:12.029 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:13.030 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:13.031 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:13.036 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:14.036 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:14.038 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:14.042 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:15.044 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:15.045 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:15.049 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:16.050 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:16.052 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:16.057 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:17.060 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:17.061 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:17.065 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:47:18.067 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 15:47:18.069 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:18.076 # Error condition on socket for SYNC: Connection refused
+1:signal-handler (1576684038) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 15:47:18.475 # User requested shutdown...
+1:S 18 Dec 2019 15:47:18.477 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 15:47:18.478 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:47:19.341 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:47:19.342 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:47:19.353 # Configuration loaded
+1:S 18 Dec 2019 15:47:19.370 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:47:19.373 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:47:19.374 # Server initialized
+1:S 18 Dec 2019 15:47:19.376 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:47:19.391 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:47:19.399 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:47:19.402 * DB loaded from append only file: 0.024 seconds
+1:S 18 Dec 2019 15:47:19.404 * Ready to accept connections
+1:S 18 Dec 2019 15:47:19.406 * Connecting to MASTER 192.168.10.31.90:6379
+1:S 18 Dec 2019 15:47:19.479 * MASTER <-> REPLICA sync started
+1:signal-handler (1576684078) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 15:47:58.949 # User requested shutdown...
+1:S 18 Dec 2019 15:47:58.951 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 15:47:58.953 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:47:59.768 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:47:59.769 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:47:59.771 # Configuration loaded
+1:S 18 Dec 2019 15:47:59.778 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:47:59.784 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:47:59.787 # Server initialized
+1:S 18 Dec 2019 15:47:59.790 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:47:59.798 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:47:59.801 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:47:59.804 * DB loaded from append only file: 0.011 seconds
+1:S 18 Dec 2019 15:47:59.806 * Ready to accept connections
+1:S 18 Dec 2019 15:47:59.810 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:47:59.815 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:47:59.819 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:48:00.820 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:48:00.823 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:48:00.825 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 15:48:00.831 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 15:48:00.837 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 15:48:00.856 * Full resync from master: 9fc714e0d8a3914c5102d76d257b53630645e06c:0
+1:S 18 Dec 2019 15:48:00.962 * MASTER <-> REPLICA sync: receiving 504 bytes from master
+1:S 18 Dec 2019 15:48:00.970 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 15:48:00.975 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 15:48:00.985 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 15:48:00.990 * Background append only file rewriting started by pid 9
+1:S 18 Dec 2019 15:48:01.019 * AOF rewrite child asks to stop sending diffs.
+9:C 18 Dec 2019 15:48:01.021 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 18 Dec 2019 15:48:01.023 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 18 Dec 2019 15:48:01.027 * SYNC append only file rewrite performed
+9:C 18 Dec 2019 15:48:01.029 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 15:48:01.127 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 15:48:01.130 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 15:48:01.132 * Background AOF rewrite finished successfully
+1:signal-handler (1576684331) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 15:52:11.143 # User requested shutdown...
+1:S 18 Dec 2019 15:52:11.145 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 15:52:11.147 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:52:11.922 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:52:11.926 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:52:11.930 # Configuration loaded
+1:S 18 Dec 2019 15:52:11.934 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:52:11.936 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:52:11.939 # Server initialized
+1:S 18 Dec 2019 15:52:11.941 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:52:11.949 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:52:11.951 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:52:11.955 * DB loaded from append only file: 0.012 seconds
+1:S 18 Dec 2019 15:52:11.956 * Ready to accept connections
+1:S 18 Dec 2019 15:52:11.958 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:52:11.960 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:52:11.962 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 15:52:12.966 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:52:12.971 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:52:12.973 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 15:52:12.979 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 15:52:12.985 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 15:52:12.996 * Full resync from master: 115ae23560548ec11d9fa50dfa8a916d9c398b27:0
+1:S 18 Dec 2019 15:52:13.054 * MASTER <-> REPLICA sync: receiving 504 bytes from master
+1:S 18 Dec 2019 15:52:13.068 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 15:52:13.076 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 15:52:13.082 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 15:52:13.085 * Background append only file rewriting started by pid 9
+1:S 18 Dec 2019 15:52:13.114 * AOF rewrite child asks to stop sending diffs.
+9:C 18 Dec 2019 15:52:13.117 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 18 Dec 2019 15:52:13.119 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 18 Dec 2019 15:52:13.125 * SYNC append only file rewrite performed
+9:C 18 Dec 2019 15:52:13.128 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 15:52:13.188 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 15:52:13.192 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 15:52:13.194 * Background AOF rewrite finished successfully
+1:signal-handler (1576684521) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 15:55:21.675 # User requested shutdown...
+1:S 18 Dec 2019 15:55:21.679 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 15:55:21.681 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:55:22.569 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:55:22.572 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:55:22.574 # Configuration loaded
+1:S 18 Dec 2019 15:55:22.583 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:55:22.588 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:55:22.595 # Server initialized
+1:S 18 Dec 2019 15:55:22.600 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:55:22.613 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:55:22.616 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:55:22.627 * DB loaded from append only file: 0.022 seconds
+1:S 18 Dec 2019 15:55:22.635 * Ready to accept connections
+1:S 18 Dec 2019 15:55:22.644 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:55:22.647 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:55:22.651 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 15:55:22.656 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 15:55:22.665 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 15:55:22.681 * Full resync from master: e8287a545914605a0c013493f3db3f9b5c6c5e1e:0
+1:S 18 Dec 2019 15:55:22.763 * MASTER <-> REPLICA sync: receiving 504 bytes from master
+1:S 18 Dec 2019 15:55:22.770 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 15:55:22.774 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 15:55:22.780 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 15:55:22.785 * Background append only file rewriting started by pid 10
+1:S 18 Dec 2019 15:55:22.812 * AOF rewrite child asks to stop sending diffs.
+10:C 18 Dec 2019 15:55:22.814 * Parent agreed to stop sending diffs. Finalizing AOF...
+10:C 18 Dec 2019 15:55:22.816 * Concatenating 0.00 MB of AOF diff received from parent.
+10:C 18 Dec 2019 15:55:22.820 * SYNC append only file rewrite performed
+10:C 18 Dec 2019 15:55:22.822 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 15:55:22.851 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 15:55:22.854 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 15:55:22.857 * Background AOF rewrite finished successfully
+1:signal-handler (1576684625) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 15:57:05.912 # User requested shutdown...
+1:S 18 Dec 2019 15:57:05.913 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 15:57:05.915 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 15:57:06.804 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 15:57:06.807 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 15:57:06.810 # Configuration loaded
+1:S 18 Dec 2019 15:57:06.814 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 15:57:06.816 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 15:57:06.818 # Server initialized
+1:S 18 Dec 2019 15:57:06.820 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 15:57:06.823 * Reading RDB preamble from AOF file...
+1:S 18 Dec 2019 15:57:06.825 * Reading the remaining AOF tail...
+1:S 18 Dec 2019 15:57:06.827 * DB loaded from append only file: 0.005 seconds
+1:S 18 Dec 2019 15:57:06.828 * Ready to accept connections
+1:S 18 Dec 2019 15:57:06.829 * Connecting to MASTER 192.168.31.90:6379
+1:S 18 Dec 2019 15:57:06.832 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 15:57:06.833 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 15:57:06.836 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 15:57:06.843 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 15:57:06.860 * Full resync from master: ab3b239902e8a9964fdf22ff0b999ce1e16a3d19:0
+1:S 18 Dec 2019 15:57:06.955 * MASTER <-> REPLICA sync: receiving 504 bytes from master
+1:S 18 Dec 2019 15:57:06.958 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 15:57:06.962 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 15:57:06.969 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 15:57:06.973 * Background append only file rewriting started by pid 9
+1:S 18 Dec 2019 15:57:07.000 * AOF rewrite child asks to stop sending diffs.
+9:C 18 Dec 2019 15:57:07.002 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 18 Dec 2019 15:57:07.006 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 18 Dec 2019 15:57:07.015 * SYNC append only file rewrite performed
+9:C 18 Dec 2019 15:57:07.019 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 15:57:07.036 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 15:57:07.044 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 15:57:07.048 * Background AOF rewrite finished successfully
+1:signal-handler (1576684898) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 16:01:38.284 # User requested shutdown...
+1:S 18 Dec 2019 16:01:38.286 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 16:01:38.289 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:18:37.368 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:18:37.371 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:18:37.376 # Configuration loaded
+1:S 19 Dec 2019 00:18:37.382 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 00:18:37.389 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 00:18:37.392 # Server initialized
+1:S 19 Dec 2019 00:18:37.397 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 00:18:37.408 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 00:18:37.411 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 00:18:37.419 * DB loaded from append only file: 0.018 seconds
+1:S 19 Dec 2019 00:18:37.421 * Ready to accept connections
+1:S 19 Dec 2019 00:18:37.423 * Connecting to MASTER 192.168.31.90:6379
+1:S 19 Dec 2019 00:18:37.426 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:19:38.725 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:19:38.728 * Connecting to MASTER 192.168.31.90:6379
+1:S 19 Dec 2019 00:19:38.731 * MASTER <-> REPLICA sync started
+1:signal-handler (1576714798) Received SIGTERM scheduling shutdown...
+1:S 19 Dec 2019 00:19:58.311 # User requested shutdown...
+1:S 19 Dec 2019 00:19:58.313 * Calling fsync() on the AOF file.
+1:S 19 Dec 2019 00:19:58.315 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:19:59.150 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:19:59.154 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:19:59.157 # Configuration loaded
+1:S 19 Dec 2019 00:19:59.166 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 00:19:59.174 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 00:19:59.182 # Server initialized
+1:S 19 Dec 2019 00:19:59.185 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 00:19:59.199 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 00:19:59.202 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 00:19:59.212 * DB loaded from append only file: 0.022 seconds
+1:S 19 Dec 2019 00:19:59.215 * Ready to accept connections
+1:S 19 Dec 2019 00:19:59.221 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:19:59.228 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:21:00.553 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:21:00.557 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:21:00.560 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:22:01.845 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:22:01.848 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:22:01.886 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:23:02.227 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:23:02.229 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:23:02.231 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:24:03.496 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:24:03.499 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:24:03.501 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:25:04.778 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:25:04.780 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:25:04.782 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:26:05.065 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:26:05.067 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:26:05.068 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:27:06.355 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:27:06.358 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:27:06.359 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:28:07.659 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:28:07.661 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:28:07.664 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:29:08.959 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:29:08.961 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:29:08.962 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:30:09.242 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:30:09.245 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:30:09.247 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:31:10.586 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:31:10.588 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:31:10.591 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:32:11.891 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:32:11.894 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:32:11.904 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:33:12.179 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:33:12.181 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:33:12.185 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:34:13.470 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:34:13.473 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:34:13.475 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:35:14.782 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:35:14.784 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:35:14.785 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:36:15.051 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:36:15.055 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:36:15.058 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:37:16.563 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:37:16.566 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:37:16.568 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:38:17.831 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:38:17.833 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:38:17.835 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:39:18.099 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:39:18.101 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:39:18.103 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:40:19.536 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:40:19.538 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:40:19.541 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:40:24.613 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 00:40:25.568 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:40:25.570 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:41:26.915 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:41:26.917 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:41:26.919 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:42:27.219 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:42:27.222 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:42:27.224 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:43:28.534 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:43:28.536 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:43:28.538 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:44:29.818 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:44:29.820 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:44:29.822 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:45:30.197 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:45:30.198 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:45:30.200 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:46:31.673 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:46:31.676 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:46:31.678 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:47:32.948 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:47:32.951 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:47:32.953 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:48:33.236 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:48:33.239 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:48:33.242 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:49:34.555 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:49:34.558 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:49:34.559 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:50:35.867 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:50:35.870 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:50:35.872 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:51:36.156 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:51:36.159 * Connecting to MASTER 192.168.31.73:6379
+1:S 19 Dec 2019 00:51:36.161 * MASTER <-> REPLICA sync started
+1:signal-handler (1576716754) Received SIGTERM scheduling shutdown...
+1:S 19 Dec 2019 00:52:34.822 # User requested shutdown...
+1:S 19 Dec 2019 00:52:34.824 * Calling fsync() on the AOF file.
+1:S 19 Dec 2019 00:52:34.828 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 00:52:36.655 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 00:52:36.657 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 00:52:36.662 # Configuration loaded
+1:S 19 Dec 2019 00:52:36.676 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 00:52:36.682 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 00:52:36.687 # Server initialized
+1:S 19 Dec 2019 00:52:36.689 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 00:52:36.695 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 00:52:36.698 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 00:52:36.704 * DB loaded from append only file: 0.012 seconds
+1:S 19 Dec 2019 00:52:36.710 * Ready to accept connections
+1:S 19 Dec 2019 00:52:36.717 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:52:36.720 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:53:37.993 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:53:37.996 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:53:37.998 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:54:38.264 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:54:38.266 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:54:38.268 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:55:39.535 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:55:39.538 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:55:39.540 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:56:40.826 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:56:40.828 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:56:40.830 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:56:54.861 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 00:56:54.895 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:56:54.897 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:57:55.222 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:57:55.224 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:57:55.228 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:58:56.508 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 00:58:56.511 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:58:56.513 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 00:59:34.083 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 00:59:34.682 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 00:59:34.685 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:00:35.964 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:00:35.966 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:00:35.968 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:00:43.603 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:00:44.007 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:00:44.009 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:01:45.270 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:01:45.276 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:01:45.278 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:02:46.563 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:02:46.568 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:02:46.570 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:03:47.847 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:03:47.850 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:03:47.856 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:04:48.125 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:04:48.127 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:04:48.133 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:05:01.824 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:05:02.195 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:05:02.197 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:06:03.543 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:06:03.545 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:06:03.547 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:07:04.833 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:07:04.835 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:07:04.838 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:08:05.468 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:08:05.471 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:08:05.473 * MASTER <-> REPLICA sync started
+1:signal-handler (1576717704) Received SIGTERM scheduling shutdown...
+1:S 19 Dec 2019 01:08:24.725 # User requested shutdown...
+1:S 19 Dec 2019 01:08:24.728 * Calling fsync() on the AOF file.
+1:S 19 Dec 2019 01:08:24.731 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 01:08:26.011 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 01:08:26.013 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 01:08:26.016 # Configuration loaded
+1:S 19 Dec 2019 01:08:26.034 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 01:08:26.038 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 01:08:26.041 # Server initialized
+1:S 19 Dec 2019 01:08:26.044 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 01:08:26.048 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 01:08:26.050 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 01:08:26.054 * DB loaded from append only file: 0.008 seconds
+1:S 19 Dec 2019 01:08:26.056 * Ready to accept connections
+1:S 19 Dec 2019 01:08:26.058 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:08:26.060 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:09:27.745 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:09:27.750 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:09:27.752 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:10:28.455 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:10:28.457 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:10:28.459 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:11:29.149 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:11:29.151 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:11:29.159 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:12:30.858 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:12:30.860 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:12:30.875 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:13:31.544 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:13:31.546 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:13:31.548 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:13:45.707 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:13:46.723 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:13:46.725 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:13:51.747 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:13:51.774 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:13:51.776 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:13:57.809 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:13:57.841 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:13:57.843 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:14:03.848 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:14:03.929 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:14:03.931 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:15:04.671 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:15:04.673 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:15:04.676 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:15:17.897 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:15:18.820 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:15:18.822 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:16:19.533 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:16:19.536 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:16:19.539 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:17:20.271 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:17:20.273 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:17:20.277 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:18:21.002 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:18:21.009 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:18:21.011 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:18:27.199 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:18:28.084 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:18:28.087 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:19:29.824 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:19:29.827 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:19:29.829 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:19:39.949 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:19:39.956 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:19:39.958 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:20:40.666 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:20:40.668 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:20:40.672 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:20:50.700 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:20:50.789 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:20:50.791 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:20:56.759 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:20:56.858 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:20:56.861 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:21:57.614 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:21:57.616 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:21:57.618 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:22:58.302 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:22:58.303 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:22:58.305 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:23:05.261 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 01:23:05.396 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:23:05.398 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:24:06.163 # Timeout connecting to the MASTER...
+1:S 19 Dec 2019 01:24:06.165 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 01:24:06.168 * MASTER <-> REPLICA sync started
+1:signal-handler (1576718680) Received SIGTERM scheduling shutdown...
+1:S 19 Dec 2019 01:24:40.152 # User requested shutdown...
+1:S 19 Dec 2019 01:24:40.155 * Calling fsync() on the AOF file.
+1:S 19 Dec 2019 01:24:40.158 # Redis is now ready to exit, bye bye...
+1:C 19 Dec 2019 01:24:41.402 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 01:24:41.406 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 01:24:41.409 # Configuration loaded
+1:S 19 Dec 2019 01:24:41.418 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 01:24:41.421 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 01:24:41.424 # Server initialized
+1:S 19 Dec 2019 01:24:41.427 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 01:24:41.438 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 01:24:41.444 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 01:24:41.455 * DB loaded from append only file: 0.023 seconds
+1:S 19 Dec 2019 01:24:41.462 * Ready to accept connections
+1:S 19 Dec 2019 01:24:41.466 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 01:24:41.474 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 01:24:41.478 * Non blocking connect for SYNC fired the event.
+1:S 19 Dec 2019 01:24:41.485 * Master replied to PING, replication can continue...
+1:S 19 Dec 2019 01:24:41.496 * Partial resynchronization not possible (no cached master)
+1:S 19 Dec 2019 01:24:41.518 * Full resync from master: dbb42c525c5c7ef1991dcfa01ee37bdea7feb4a8:0
+1:S 19 Dec 2019 01:24:41.563 * MASTER <-> REPLICA sync: receiving 394 bytes from master
+1:S 19 Dec 2019 01:24:41.568 * MASTER <-> REPLICA sync: Flushing old data
+1:S 19 Dec 2019 01:24:41.571 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 19 Dec 2019 01:24:41.576 * MASTER <-> REPLICA sync: Finished with success
+1:S 19 Dec 2019 01:24:41.579 * Background append only file rewriting started by pid 9
+1:S 19 Dec 2019 01:24:41.608 * AOF rewrite child asks to stop sending diffs.
+9:C 19 Dec 2019 01:24:41.611 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 19 Dec 2019 01:24:41.613 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 19 Dec 2019 01:24:41.616 * SYNC append only file rewrite performed
+9:C 19 Dec 2019 01:24:41.619 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 19 Dec 2019 01:24:41.683 * Background AOF rewrite terminated with success
+1:S 19 Dec 2019 01:24:41.688 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 19 Dec 2019 01:24:41.691 * Background AOF rewrite finished successfully
+1:S 19 Dec 2019 02:33:59.733 # Connection with master lost.
+1:S 19 Dec 2019 02:33:59.736 * Caching the disconnected master state.
+1:S 19 Dec 2019 02:34:00.413 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:00.415 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:00.417 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:01.426 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:01.428 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:01.431 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:02.440 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:02.442 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:02.444 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:03.454 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:03.457 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:03.459 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:04.468 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:04.471 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:04.473 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:05.487 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:05.490 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:05.492 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:06.504 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:06.507 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:06.510 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:07.517 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:07.519 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:07.521 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:08.532 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:08.534 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:08.536 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:09.543 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:09.546 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:09.548 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:10.555 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:10.557 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:10.559 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:11.564 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:11.568 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:11.570 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:12.578 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:12.587 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:12.589 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:13.600 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:13.602 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:13.604 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:14.615 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:14.617 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:14.618 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:15.626 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:15.627 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:15.629 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:16.640 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:16.642 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:16.644 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:17.648 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:17.651 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:17.653 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:18.661 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:18.663 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:18.664 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:19.675 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:19.677 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:19.679 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:20.691 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:20.694 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:20.695 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:21.705 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:21.707 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:21.709 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:22.717 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:22.719 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:22.721 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:23.735 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:23.737 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:23.739 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:24.751 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:24.754 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:24.756 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:25.769 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:25.772 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:25.775 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:26.786 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:26.789 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:26.791 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:27.806 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:27.809 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:27.811 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:28.816 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:28.819 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:28.821 # Error condition on socket for SYNC: Connection refused
+1:S 19 Dec 2019 02:34:29.828 * Connecting to MASTER 192.168.1.7:6379
+1:S 19 Dec 2019 02:34:29.831 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 02:34:29.833 # Error condition on socket for SYNC: Connection refused
+1:M 19 Dec 2019 02:34:30.093 # Setting secondary replication ID to dbb42c525c5c7ef1991dcfa01ee37bdea7feb4a8, valid up to offset: 863041. New replication ID is fa806f030f950b19a823c2064c6cb2a3d3d840e1
+1:M 19 Dec 2019 02:34:30.095 * Discarding previously cached master state.
+1:M 19 Dec 2019 02:34:30.097 * MASTER MODE enabled (user request from 'id=5 addr=172.20.0.1:43636 fd=9 name=sentinel-3d9ef79a-cmd age=4179 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=280 qbuf-free=32488 obl=36 oll=0 omem=0 events=r cmd=exec')
+1:M 19 Dec 2019 02:34:30.102 # CONFIG REWRITE executed with success.
+1:M 19 Dec 2019 02:34:31.056 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 19 Dec 2019 02:34:31.057 * Partial resynchronization request from 172.20.0.1:6380 accepted. Sending 302 bytes of backlog starting from offset 863041.
+1:C 19 Dec 2019 05:06:16.146 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Dec 2019 05:06:16.149 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Dec 2019 05:06:16.151 # Configuration loaded
+1:S 19 Dec 2019 05:06:16.154 * Running mode=standalone, port=6381.
+1:S 19 Dec 2019 05:06:16.157 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 19 Dec 2019 05:06:16.160 # Server initialized
+1:S 19 Dec 2019 05:06:16.163 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 19 Dec 2019 05:06:16.174 * Reading RDB preamble from AOF file...
+1:S 19 Dec 2019 05:06:16.180 * Reading the remaining AOF tail...
+1:S 19 Dec 2019 05:06:16.187 * DB loaded from append only file: 0.019 seconds
+1:S 19 Dec 2019 05:06:16.189 * Ready to accept connections
+1:S 19 Dec 2019 05:06:16.192 * Connecting to MASTER 192.168.10.73:6379
+1:S 19 Dec 2019 05:06:16.194 * MASTER <-> REPLICA sync started
+1:S 19 Dec 2019 05:06:16.201 * Non blocking connect for SYNC fired the event.
+1:S 19 Dec 2019 05:06:16.210 * Master replied to PING, replication can continue...
+1:S 19 Dec 2019 05:06:16.222 * Partial resynchronization not possible (no cached master)
+1:S 19 Dec 2019 05:06:16.234 * Full resync from master: fc0a3d368de7c1955bef4a2d803518760fcc8058:0
+1:S 19 Dec 2019 05:06:16.267 * MASTER <-> REPLICA sync: receiving 402 bytes from master
+1:S 19 Dec 2019 05:06:16.271 * MASTER <-> REPLICA sync: Flushing old data
+1:S 19 Dec 2019 05:06:16.274 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 19 Dec 2019 05:06:16.279 * MASTER <-> REPLICA sync: Finished with success
+1:S 19 Dec 2019 05:06:16.282 * Background append only file rewriting started by pid 10
+1:S 19 Dec 2019 05:06:16.310 * AOF rewrite child asks to stop sending diffs.
+10:C 19 Dec 2019 05:06:16.312 * Parent agreed to stop sending diffs. Finalizing AOF...
+10:C 19 Dec 2019 05:06:16.314 * Concatenating 0.00 MB of AOF diff received from parent.
+10:C 19 Dec 2019 05:06:16.317 * SYNC append only file rewrite performed
+10:C 19 Dec 2019 05:06:16.320 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 19 Dec 2019 05:06:16.398 * Background AOF rewrite terminated with success
+1:S 19 Dec 2019 05:06:16.401 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 19 Dec 2019 05:06:16.404 * Background AOF rewrite finished successfully
+1:signal-handler (1576748370) Received SIGTERM scheduling shutdown...
+1:S 19 Dec 2019 09:39:30.260 # User requested shutdown...
+1:S 19 Dec 2019 09:39:30.267 * Calling fsync() on the AOF file.
+1:S 19 Dec 2019 09:39:30.269 # Redis is now ready to exit, bye bye...

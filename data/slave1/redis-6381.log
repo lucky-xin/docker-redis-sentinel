@@ -1,0 +1,34 @@
+1:C 18 Dec 2019 07:56:28.728 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 07:56:28.736 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 07:56:28.738 # Configuration loaded
+1:S 18 Dec 2019 07:56:28.746 * Running mode=standalone, port=6381.
+1:S 18 Dec 2019 07:56:28.748 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:S 18 Dec 2019 07:56:28.749 # Server initialized
+1:S 18 Dec 2019 07:56:28.752 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:S 18 Dec 2019 07:56:28.757 * Ready to accept connections
+1:S 18 Dec 2019 07:56:28.759 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 07:56:28.761 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 07:56:28.763 # Error condition on socket for SYNC: Connection refused
+1:S 18 Dec 2019 07:56:29.767 * Connecting to MASTER 192.168.10.73:6379
+1:S 18 Dec 2019 07:56:29.769 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 07:56:29.772 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 07:56:29.774 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 07:56:29.780 * Partial resynchronization not possible (no cached master)
+1:S 18 Dec 2019 07:56:29.794 * Full resync from master: 49e34f9dd0ce699a5fd0a65d6ea4e2778c43edb7:0
+1:S 18 Dec 2019 07:56:29.855 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 18 Dec 2019 07:56:29.858 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 07:56:29.859 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 07:56:29.862 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 07:56:29.865 * Background append only file rewriting started by pid 9
+1:S 18 Dec 2019 07:56:29.896 * AOF rewrite child asks to stop sending diffs.
+9:C 18 Dec 2019 07:56:29.898 * Parent agreed to stop sending diffs. Finalizing AOF...
+9:C 18 Dec 2019 07:56:29.900 * Concatenating 0.00 MB of AOF diff received from parent.
+9:C 18 Dec 2019 07:56:29.902 * SYNC append only file rewrite performed
+9:C 18 Dec 2019 07:56:29.904 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 07:56:29.974 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 07:56:29.977 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 07:56:29.980 * Background AOF rewrite finished successfully
+1:signal-handler (1576655859) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 07:57:39.992 # User requested shutdown...
+1:S 18 Dec 2019 07:57:39.994 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 07:57:39.996 # Redis is now ready to exit, bye bye...

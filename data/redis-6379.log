@@ -1,0 +1,65 @@
+1:C 18 Dec 2019 07:29:21.692 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 07:29:21.704 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 07:29:21.714 # Configuration loaded
+1:M 18 Dec 2019 07:29:21.726 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 07:29:21.728 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 07:29:21.732 # Server initialized
+1:M 18 Dec 2019 07:29:21.736 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 07:29:21.740 * Ready to accept connections
+1:M 18 Dec 2019 07:29:22.659 * Replica 172.20.0.1:6381 asks for synchronization
+1:M 18 Dec 2019 07:29:22.661 * Full resync requested by replica 172.20.0.1:6381
+1:M 18 Dec 2019 07:29:22.663 * Starting BGSAVE for SYNC with target: disk
+1:M 18 Dec 2019 07:29:22.665 * Background saving started by pid 9
+9:C 18 Dec 2019 07:29:22.668 * DB saved on disk
+9:C 18 Dec 2019 07:29:22.671 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 Dec 2019 07:29:22.727 * Replica 172.20.0.1:6380 asks for synchronization
+1:M 18 Dec 2019 07:29:22.729 * Full resync requested by replica 172.20.0.1:6380
+1:M 18 Dec 2019 07:29:22.731 * Waiting for end of BGSAVE for SYNC
+1:M 18 Dec 2019 07:29:22.745 * Background saving terminated with success
+1:M 18 Dec 2019 07:29:22.751 * Synchronization with replica 172.20.0.1:6381 succeeded
+1:M 18 Dec 2019 07:29:22.754 * Synchronization with replica 172.20.0.1:6380 succeeded
+1:signal-handler (1576654596) Received SIGTERM scheduling shutdown...
+1:M 18 Dec 2019 07:36:36.912 # User requested shutdown...
+1:M 18 Dec 2019 07:36:36.914 * Calling fsync() on the AOF file.
+1:M 18 Dec 2019 07:36:36.915 # Redis is now ready to exit, bye bye...
+1:C 18 Dec 2019 07:41:36.294 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Dec 2019 07:41:36.296 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Dec 2019 07:41:36.298 # Configuration loaded
+1:M 18 Dec 2019 07:41:36.301 * Running mode=standalone, port=6379.
+1:M 18 Dec 2019 07:41:36.303 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Dec 2019 07:41:36.304 # Server initialized
+1:M 18 Dec 2019 07:41:36.306 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Dec 2019 07:41:36.308 * Ready to accept connections
+1:S 18 Dec 2019 07:41:46.564 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 18 Dec 2019 07:41:46.566 * REPLICAOF 172.20.0.1:6380 enabled (user request from 'id=3 addr=172.20.0.1:53758 fd=8 name=sentinel-eb00243c-cmd age=10 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=150 qbuf-free=32618 obl=36 oll=0 omem=0 events=r cmd=exec')
+1:S 18 Dec 2019 07:41:46.572 # CONFIG REWRITE executed with success.
+1:S 18 Dec 2019 07:41:47.370 * Connecting to MASTER 172.20.0.1:6380
+1:S 18 Dec 2019 07:41:47.373 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 07:41:47.375 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 07:41:47.377 * Master replied to PING, replication can continue...
+1:S 18 Dec 2019 07:41:47.380 * Trying a partial resynchronization (request b690138ce6124840d1c3dec72ba165cb6ec29408:1).
+1:S 18 Dec 2019 07:41:47.383 * Full resync from master: a9b6079bf73b480c6144d51363fa84c1de038a55:148765
+1:S 18 Dec 2019 07:41:47.385 * Discarding previously cached master state.
+1:S 18 Dec 2019 07:41:47.397 * MASTER <-> REPLICA sync: receiving 178 bytes from master
+1:S 18 Dec 2019 07:41:47.400 * MASTER <-> REPLICA sync: Flushing old data
+1:S 18 Dec 2019 07:41:47.402 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 18 Dec 2019 07:41:47.405 * MASTER <-> REPLICA sync: Finished with success
+1:S 18 Dec 2019 07:41:47.409 * Background append only file rewriting started by pid 10
+1:S 18 Dec 2019 07:41:47.439 * AOF rewrite child asks to stop sending diffs.
+10:C 18 Dec 2019 07:41:47.442 * Parent agreed to stop sending diffs. Finalizing AOF...
+10:C 18 Dec 2019 07:41:47.444 * Concatenating 0.00 MB of AOF diff received from parent.
+10:C 18 Dec 2019 07:41:47.447 * SYNC append only file rewrite performed
+10:C 18 Dec 2019 07:41:47.449 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 18 Dec 2019 07:41:47.476 * Background AOF rewrite terminated with success
+1:S 18 Dec 2019 07:41:47.481 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 18 Dec 2019 07:41:47.484 * Background AOF rewrite finished successfully
+1:S 18 Dec 2019 07:50:04.823 # Connection with master lost.
+1:S 18 Dec 2019 07:50:04.830 * Caching the disconnected master state.
+1:S 18 Dec 2019 07:50:04.851 * Connecting to MASTER 172.20.0.1:6380
+1:S 18 Dec 2019 07:50:04.854 * MASTER <-> REPLICA sync started
+1:S 18 Dec 2019 07:50:04.860 * Non blocking connect for SYNC fired the event.
+1:S 18 Dec 2019 07:50:04.863 # Error condition on socket for SYNC: Broken pipe
+1:signal-handler (1576655405) Received SIGTERM scheduling shutdown...
+1:S 18 Dec 2019 07:50:05.161 # User requested shutdown...
+1:S 18 Dec 2019 07:50:05.163 * Calling fsync() on the AOF file.
+1:S 18 Dec 2019 07:50:05.165 # Redis is now ready to exit, bye bye...
