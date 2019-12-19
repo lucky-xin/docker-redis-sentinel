@@ -1,0 +1,13 @@
+ARG BASE_IMAGE=redis:5.0.7
+
+FROM ${BASE_IMAGE}
+
+MAINTAINER "Luchaoxin"
+
+COPY redis-entrypoint.sh /
+
+RUN chmod +x /redis-entrypoint.sh
+
+EXPOSE ${PORT}
+
+ENTRYPOINT ["/redis-entrypoint.sh"]

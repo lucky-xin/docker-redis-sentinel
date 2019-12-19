@@ -1,0 +1,130 @@
+version: '3.7'
+services:
+
+  redis_master:
+    build:
+      context: ./
+      dockerfile: RedisDockerfile
+    container_name: redis_master
+    env_file:
+      - .env
+    environment:
+      - PORT=6379
+    volumes:
+      - ./config/redis-master.conf:/usr/local/etc/redis/redis.conf
+      - ./data/master:/data
+    ports:
+      - 6379:6379
+    networks:
+      - xin-framework-net
+
+  redis_slave1:
+    build:
+      context: ./
+      dockerfile: RedisDockerfile
+    image: redis_slave1
+    container_name: redis_slave1
+    env_file:
+      - .env
+    environment:
+      - REDIS_MASTER_IP=$REDIS_MASTER_IP
+      - REDIS_MASTER_PORT=$REDIS_MASTER_PORT
+      - PORT=6380
+    volumes:
+      - ./config/redis-slave-1.conf:/usr/local/etc/redis/redis.conf
+      - ./data/slave1:/data
+    ports:
+      - 6380:6380
+    networks:
+      - xin-framework-net
+    depends_on:
+      - redis_master
+
+  redis_slave2:
+    build:
+      context: ./
+      dockerfile: RedisDockerfile
+    image: redis_slave2
+    container_name: redis_slave2
+    env_file:
+      - .env
+    environment:
+      - REDIS_MASTER_IP=$REDIS_MASTER_IP
+      - REDIS_MASTER_PORT=$REDIS_MASTER_PORT
+      - PORT=6381
+    volumes:
+      - ./config/redis-slave-2.conf:/usr/local/etc/redis/redis.conf
+      - ./data/slave2:/data
+    ports:
+      - 6381:6381
+    networks:
+      - xin-framework-net
+    depends_on:
+      - redis_master
+
+  redis_sentinel1:
+    build:
+      context: ./
+      dockerfile: SentinelDockerfile
+    container_name: redis_sentinel1
+    env_file:
+      - .env
+    environment:
+      - REDIS_MASTER_NAME=redis_master
+      - PORT=26379
+      - REDIS_MASTER_IP=$REDIS_MASTER_IP
+      - REDIS_MASTER_PORT=$REDIS_MASTER_PORT
+    volumes:
+      - ./config/sentinel-1.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26379:26379
+    networks:
+      - xin-framework-net
+    depends_on:
+      - redis_master
+
+  redis_sentinel2:
+    build:
+      context: ./
+      dockerfile: SentinelDockerfile
+    container_name: redis_sentinel2
+    env_file:
+      - .env
+    environment:
+      - REDIS_MASTER_NAME=redis_master
+      - PORT=26380
+      - REDIS_MASTER_IP=$REDIS_MASTER_IP
+      - REDIS_MASTER_PORT=$REDIS_MASTER_PORT
+    volumes:
+      - ./config/sentinel-2.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26380:26380
+    networks:
+      - xin-framework-net
+    depends_on:
+      - redis_master
+
+  redis_sentinel3:
+    build:
+      context: ./
+      dockerfile: SentinelDockerfile
+    container_name: redis_sentinel3
+    env_file:
+      - .env
+    environment:
+      - REDIS_MASTER_NAME=redis_master
+      - PORT=26381
+      - REDIS_MASTER_IP=$REDIS_MASTER_IP
+      - REDIS_MASTER_PORT=$REDIS_MASTER_PORT
+    volumes:
+      - ./config/sentinel-3.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26381:26381
+    networks:
+      - xin-framework-net
+    depends_on:
+      - redis_master
+
+networks:
+  xin-framework-net:
+    external: true

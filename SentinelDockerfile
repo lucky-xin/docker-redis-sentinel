@@ -1,0 +1,16 @@
+ARG BASE_IMAGE=redis:5.0.7
+
+FROM ${BASE_IMAGE}
+
+MAINTAINER "Luchaoxin"
+
+#EXPOSE ${PORT}
+
+COPY sentinel-entrypoint.sh /
+
+ADD config/sentinel.conf /etc/redis/sentinel.conf
+
+RUN chown redis:redis /etc/redis/sentinel.conf && \
+    chmod +x /sentinel-entrypoint.sh
+
+ENTRYPOINT ["/sentinel-entrypoint.sh"]
