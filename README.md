@@ -205,8 +205,8 @@ spring:
  */
 @Slf4j
 @Configuration
+@ConditionalOnClass({GenericObjectPool.class, JedisConnection.class, Jedis.class})
 @AutoConfigureBefore({RedisAutoConfiguration.class})
-@EnableConfigurationProperties(CacheProperties.class)
 public class RedisConfiguration {
 
 	@Bean
