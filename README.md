@@ -198,47 +198,111 @@ spring:
 ### 代码配置
 ```java
 /***
- * @Description: Redis Sentinel 配置
+ * @Description: 扩展redis-cache支持注解cacheName添加超时时间，如果配置了Sentinel则使用Sentinel模式连接
  * @Auther: Luchaoxin
- * @Date: 2019/12/19
+ * @Date: 2018/9/9
  * @version : V1.0
  */
 @Slf4j
 @Configuration
-@EnableAutoConfiguration
-public class RedisConfig {
-    
-    @Bean
-    @ConfigurationProperties(prefix = "spring.redis")
-    public JedisPoolConfig getRedisConfig() {
-        JedisPoolConfig config = new JedisPoolConfig();
-        return config;
-    }
+@AutoConfigureAfter({RedisAutoConfiguration.class})
+@ConditionalOnBean({RedisConnectionFactory.class})
+@ConditionalOnMissingBean({CacheManager.class})
+@EnableConfigurationProperties(CacheProperties.class)
+public class RedisCacheAutoConfiguration {
+	private final CacheProperties cacheProperties;
+	private final CacheManagerCustomizers customizerInvoker;
+	@Nullable
+	private final RedisCacheConfiguration redisCacheConfiguration;
 
-    @Bean
-    public RedisSentinelConfiguration sentinelConfiguration(RedisProperties redisProperties) {
-        RedisSentinelConfiguration redisSentinelConfiguration = new RedisSentinelConfiguration();
-        //配置matser的名称
-        redisSentinelConfiguration.master(redisProperties.getSentinel().getMaster());
-        //配置redis的哨兵sentinel
-        Set<RedisNode> redisNodeSet = new HashSet<>();
-        redisProperties.getSentinel().getNodes().forEach(x -> {
-            String[] array = x.split(":");
-            redisNodeSet.add(new RedisNode(array[0], Integer.parseInt(array[1])));
-        });
-        log.info("redisNodeSet -->" + redisNodeSet);
-        redisSentinelConfiguration.setSentinels(redisNodeSet);
-        redisSentinelConfiguration.setPassword(redisProperties.getPassword());
-        return redisSentinelConfiguration;
-    }
+	RedisCacheAutoConfiguration(CacheProperties cacheProperties,
+								CacheManagerCustomizers customizerInvoker,
+								ObjectProvider<RedisCacheConfiguration> redisCacheConfiguration) {
+		this.cacheProperties = cacheProperties;
+		this.customizerInvoker = customizerInvoker;
+		this.redisCacheConfiguration = redisCacheConfiguration.getIfAvailable();
+	}
 
-    @Bean
-    public JedisConnectionFactory jedisConnectionFactory(JedisPoolConfig jedisPoolConfig, RedisSentinelConfiguration sentinelConfig) {
-        JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(sentinelConfig, jedisPoolConfig);
-        return jedisConnectionFactory;
-    }
+	@Bean
+	@ConfigurationProperties(prefix = "spring.redis")
+	public JedisPoolConfig getRedisConfig() {
+		JedisPoolConfig config = new JedisPoolConfig();
+		return config;
+	}
 
+	@Bean
+	@ConditionalOnProperty(name = "spring.redis.sentinel.nodes")
+	public RedisSentinelConfiguration sentinelConfiguration(RedisProperties redisProperties) {
+		RedisSentinelConfiguration redisSentinelConfiguration = new RedisSentinelConfiguration();
+		//配置matser的名称
+		redisSentinelConfiguration.master(redisProperties.getSentinel().getMaster());
+		//配置redis的哨兵sentinel
+		Set<RedisNode> redisNodeSet = new HashSet<>();
+		redisProperties.getSentinel().getNodes().forEach(x -> {
+			String[] array = x.split(":");
+			redisNodeSet.add(new RedisNode(array[0], Integer.parseInt(array[1])));
+		});
+		log.info("redisNodeSet -->" + redisNodeSet);
+		redisSentinelConfiguration.setSentinels(redisNodeSet);
+		redisSentinelConfiguration.setPassword(redisProperties.getPassword());
+		return redisSentinelConfiguration;
+	}
+
+	@Bean
+	@ConditionalOnMissingBean(RedisConnectionFactory.class)
+	@ConditionalOnProperty(name = {"spring.redis.sentinel.nodes"})
+	public RedisConnectionFactory redisConnectionFactory(JedisPoolConfig jedisPoolConfig,
+														 RedisSentinelConfiguration sentinelConfig) {
+		JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(sentinelConfig, jedisPoolConfig);
+		return jedisConnectionFactory;
+	}
+
+	@Bean
+	public RedisCacheManager cacheManager(@Qualifier("redisConnectionFactory") RedisConnectionFactory redisConnectionFactory,
+										  ResourceLoader resourceLoader) {
+		DefaultRedisCacheWriter redisCacheWriter = new DefaultRedisCacheWriter(redisConnectionFactory);
+		RedisCacheConfiguration cacheConfiguration = this.determineConfiguration(resourceLoader.getClassLoader());
+		List<String> cacheNames = this.cacheProperties.getCacheNames();
+		Map<String, RedisCacheConfiguration> initialCaches = new LinkedHashMap<>();
+		if (!cacheNames.isEmpty()) {
+			Map<String, RedisCacheConfiguration> cacheConfigMap = new LinkedHashMap<>(cacheNames.size());
+			cacheNames.forEach(it -> cacheConfigMap.put(it, cacheConfiguration));
+			initialCaches.putAll(cacheConfigMap);
+		}
+		RedisAutoCacheManager cacheManager = new RedisAutoCacheManager(redisCacheWriter, cacheConfiguration,
+				initialCaches, true);
+		cacheManager.setTransactionAware(false);
+		return this.customizerInvoker.customize(cacheManager);
+	}
+
+	private RedisCacheConfiguration determineConfiguration(ClassLoader classLoader) {
+		if (this.redisCacheConfiguration != null) {
+			return this.redisCacheConfiguration;
+		} else {
+			CacheProperties.Redis redisProperties = this.cacheProperties.getRedis();
+			RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig();
+			config = config.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new JdkSerializationRedisSerializer(classLoader)));
+			if (redisProperties.getTimeToLive() != null) {
+				config = config.entryTtl(redisProperties.getTimeToLive());
+			}
+
+			if (redisProperties.getKeyPrefix() != null) {
+				config = config.prefixKeysWith(redisProperties.getKeyPrefix());
+			}
+
+			if (!redisProperties.isCacheNullValues()) {
+				config = config.disableCachingNullValues();
+			}
+
+			if (!redisProperties.isUseKeyPrefix()) {
+				config = config.disableKeyPrefix();
+			}
+
+			return config;
+		}
+	}
 }
+
 ```
 ### SpringBoot启动日志如下：
 ```text
