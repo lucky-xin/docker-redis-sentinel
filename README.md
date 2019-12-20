@@ -197,7 +197,7 @@ spring:
 ```
 ### 代码配置
 ```java
-**
+/**
  * 扩展redis-cache支持注解cacheName添加超时时间，如果配置了Sentinel则使用Sentinel模式连接
  *
  * @author Luchaoxin
