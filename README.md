@@ -1,7 +1,8 @@
 # Redis 哨兵模式，AOF数据持久化，以及SpringBoot sentinel方式连接。
 ```text
 sentinel 会自动监控redis主从，当主节点宕机，会选取可用对节点当主节点。也就是说每个节点都有可能是主节点,
-都应该挂载数据，持久化方式应用一致（配置文件都添加appendonly yes）
+都应该挂载数据，持久化方式应用一致（配置文件都添加appendonly yes），SpringBoot 连接redis时只需配置所有哨兵节点，
+读写操作时会自动获取主节点
 ```
 [k8s部署redis哨兵模式](https://github.com/lucky-xin/k8s-redis-sentinel)
 ## 在当前项目目录下执行
