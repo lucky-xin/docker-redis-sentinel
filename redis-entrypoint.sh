@@ -3,15 +3,14 @@
 set -e
 
 CONFIG_FILE=${CONFIG_FILE:-/usr/local/etc/redis/redis.conf}
-
-{
-  echo "bind 0.0.0.0"
-  echo "port $PORT"
-  echo "appendonly yes"
-  echo "notify-keyspace-events Eglx"
-  echo "daemonize no"
-  echo "logfile redis-$PORT.log"
-} >> $CONFIG_FILE
+cat>>$CONFIG_FILE<<EOF
+bind 0.0.0.0
+port $PORT
+appendonly yes
+notify-keyspace-events Eglx
+daemonize no
+logfile redis-$PORT.log
+EOF
 
 if [ "$REDIS_PWD" ]; then
    echo "requirepass $REDIS_PWD" >> $CONFIG_FILE

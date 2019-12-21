@@ -1,5 +1,5 @@
 # Redis 哨兵模式，AOF数据持久化，以及SpringBoot sentinel方式连接
-## 在当前项目的redis-sentinel目录下执行
+## 在当前项目目录下执行
 ```shell script
 bash redis-start.sh 192.168.1.7 'Data*2019*' build
 ```
