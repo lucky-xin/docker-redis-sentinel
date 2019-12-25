@@ -9,8 +9,8 @@ sentinel 会自动监控redis主从，当主节点宕机，会选取可用对节
 ```shell script
 bash redis-start.sh 192.168.1.7 'Data*2019*' build
 ```
-第1个参数为本机ip
-第2个参数为密码
+第1个参数为本机ip,
+第2个参数为密码,
 第3个参数指定docker-compose build 再启动
 
 启动shell脚本待服务都启动
@@ -87,7 +87,7 @@ repl_backlog_histlen:26091
 ```
 ## 此时主节点为redis_master ip为192.168.1.7 端口为6379
 
-执行
+执行一下命令查看sentinel 信息
 ```text
 docker exec -it redis_sentinel1 redis-cli -p 26379 info
 ```
@@ -164,6 +164,7 @@ sentinel_simulate_failure_flags:0
 # redis 主节点信息
 master0:name=redis_master,status=ok,address=192.168.1.7:6379,slaves=2,sentinels=3
 ```
+信息显示此时Redis 主节点信息为192.168.1.7:6379
 redis_sentinel2，redis_sentinel3信息类似
 ## SpringBoot Sentinel 模式连接
 ### bootstrap.yml配置
