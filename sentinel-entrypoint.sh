@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cat>>/etc/redis/sentinel.conf<<EOF
 port $PORT
 sentinel monitor $REDIS_MASTER_NAME $REDIS_MASTER_IP $REDIS_MASTER_PORT $QUORUM

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ip=$1
 password=$2
 
@@ -9,7 +9,7 @@ fi
 export REDIS_MASTER_IP=$ip
 export REDIS_MASTER_PORT=6379
 export REDIS_PWD=$password
-cat>$PWD/.envZ<<EOF
+cat>$PWD/.env<<EOF
 QUORUM=2
 DOWN_AFTER=30000
 FAILOVER_TIMEOUT=180000
@@ -18,8 +18,6 @@ REDIS_PWD=$REDIS_PWD
 REDIS_MASTER_AUTH=$REDIS_PWD
 REDIS_AUTH_PASS=$REDIS_PWD
 EOF
-
-args=$3
 
 :> $PWD/config/redis-master.conf
 :> $PWD/config/redis-slave-1.conf
@@ -46,6 +44,7 @@ else
   echo "network [$compose_net] already exists"
 fi
 
+args=$3
 if [ "$args" = "build" ]; then
   docker-compose build --no-cache && docker-compose up -d
 else
