@@ -394,3 +394,4 @@ SpringBoot 日志输出如图
 ![](https://github.com/lucky-xin/redis-sentinel/blob/master/.img/SpringBoot-Sentinel.png)
 Sentinel 日志如图
 ![](https://github.com/lucky-xin/redis-sentinel/blob/master/.img/Sentinel-Log.png)
+444
